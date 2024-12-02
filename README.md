@@ -6,3 +6,7 @@ Purchasing power parity can help you answer these questions. It measures the dif
 
 To understand this, we have created a Starbucks Tall Latte Index which shows the different prices of the tall latte in different countries.
 
+# Scraping the data
+First, we scraped the data from https://www.cashnetusa.com/blog/starbucks-price-every-country/ using the requests library in Python. We then parsed the file for use with Python using the BeautifulSoup library and we were able to extract the raw HTML output of the site.
+
+
