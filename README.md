@@ -6,4 +6,3 @@ Purchasing power parity can help you answer these questions. It measures the dif
 
 To understand this, we have created a Starbucks Tall Latte Index which shows the different prices of the tall latte in different countries.
 
-#Scraping the data
