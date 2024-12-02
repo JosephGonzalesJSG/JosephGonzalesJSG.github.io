@@ -11,4 +11,4 @@ First, we scraped the data from https://www.cashnetusa.com/blog/starbucks-price-
 
 
 # References
-Insanely Good Recipes. (n.d.). *Copycat Starbucks Pumpkin Spice Latte Recipe*. pinterest. Retrieved December 2, 2024, from https://ar.pinterest.com/pin/365917538496010170/. 
+Insanely Good Recipes. (n.d.). *Copycat Starbucks Pumpkin Spice Latte Recipe*. Pinterest. Retrieved December 2, 2024, from https://ar.pinterest.com/pin/365917538496010170/. 
