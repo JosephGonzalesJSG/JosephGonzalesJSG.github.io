@@ -10,3 +10,5 @@ To understand this, we have created a Starbucks Tall Latte Index which shows the
 First, we scraped the data from https://www.cashnetusa.com/blog/starbucks-price-every-country/ using the requests library in Python. We then parsed the file for use with Python using the BeautifulSoup library and we were able to extract the raw HTML output of the site.
 
 
+# References
+Insanely Good Recipes. (n.d.). *Copycat Starbucks Pumpkin Spice Latte Recipe*. pinterest. Retrieved December 2, 2024, from https://ar.pinterest.com/pin/365917538496010170/. 
