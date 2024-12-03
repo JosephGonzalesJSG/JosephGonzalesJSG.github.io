@@ -43,11 +43,11 @@ This resulted in the following table:
 
 ![Table with tax](table2.png "Table with tax")
 
-To validate our expectation that there will be no difference between the PPP without tax and the PPP with tax, we created a bar graph that displays both indexes for each country side by side.
+To validate our expectation that there will be little to no difference between the PPP without tax and the PPP with tax, we created a bar graph that displays both indexes for each country side by side.
 
 ![PPP comparison](bargraph1.png "PPP Comparison")
 
-As we can see above, our expectation that sales tax does not change the PPP Index was right.
+As we can see above, our expectation that sales tax does not change the PPP Index significantly was right.
 
 # 4. Displaying the currencies for each country and showing the price differences
 
