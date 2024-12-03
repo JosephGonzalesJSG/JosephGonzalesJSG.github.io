@@ -32,7 +32,7 @@ Additionally, we calculated the Purchasing Power Parity by using the price in Ca
 
 The resulting table is displayed in the picture below.
 
-<table1>
+![Raw table](bargraph1.png "Raw table")
 
 # 3. Factoring local tax rates into the calculation
 The prices we scraped do not include the tax each Starbucks location would charge the consumers. Therefore, we wanted to examine if sales tax will affect PPP. Therefore, we scraped the sales tax in every country from Wikipedia; since the data was split into Euro and Non-Euro tables, we combined the two tables. Then, we needed to incorporate sales tax into the calculation, which sounded to us more straightforward than it was. It was more complicated than we thought because some countries have sales tax included in their price, and some do not; some countries have provinces, states, and cities that could charge different sales taxes within the same country. To tackle the tax challenge, we took the average sales tax that a consumer will pay in a country, and for us Brazil and Canada happened to have a sales tax that varies with location; therefore, we readjusted their sales tax accordingly. Using the tax data we gathered, we calculated a new PPP that includes sales tax and saved it in a new column. 
