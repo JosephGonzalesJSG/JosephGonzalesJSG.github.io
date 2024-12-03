@@ -60,7 +60,7 @@ This table now contains all the data we need to understand PPP.
 
 As we can see, some countries like Chile, Australia, and Belgium have more expensive lattes than Canada. We can also see that some countries like Colombia, Cambodia, Austria and Andorra have cheaper lattes than Canada. There are clearly price differences between the countries, despite the fact that the consumer is buying the same product.
 
-5. Graphing the price differences between other countries and Canada
+# 5. Graphing the price differences between other countries and Canada
 We generate a bar graph showing the price differences of foreign countries with respect to the prices of Canada. We use the barh() function to do this.
 
 ![Price difference comparison](bargraph2.png "Price Difference Comparison")
