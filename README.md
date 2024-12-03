@@ -12,7 +12,7 @@ To make this concept more tangible, we have created a Starbucks Tall Latte Index
 # Why Starbucks Latte?
 Starbucks latte is a tasty, energizing drink that many people consume daily. Starbucks is one of the most recognizable coffee companies, with many locations worldwide. Additionally, consumers worldwide expect to drink the same latte in Canada, just as in Brazil. Similarly, consumers would expect their currency's value to be the same in other countries and afford a latte across different countries for the same value.
 
-#The Creation Of The Index
+# The Creation Of The Index
 To create the Starbucks Latte Index, we took a seven-step approach detailed in Google Colab Notebook. Let us dive right in!
 Setting Up The Notebook
 First, we imported the necessary libraries to the Google Colab notebook.
