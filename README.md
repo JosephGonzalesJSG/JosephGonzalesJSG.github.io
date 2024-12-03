@@ -96,7 +96,7 @@ For consumers, the prospect of visiting countries with higher PPP than exchange 
 
 Ultimately, if you are a Starbucks lattes fan looking to maximize its consumption or minimize its cost, you can use our findings to find the best country to get more of it! Similarly, our findings could guide you to the right investment location if you are a Starbucks executive looking to maximize the company's return on investment, instilling a sense of guidance and confidence in your decision-making process.
 
-References:
+# References:
 Aisen, A., & Veiga, F. J., (2013). How does political instability affect economic growth?. European Journal of Political Economy, 29, 151-167. Klugman J., Rodríguez F., Choi HJ., (2011, January). Human development index, World Health Organization, https://www.who.int/data/nutrition/nlis/info/human-development-index#:~:text=The%20HDI%20is%20a%20summary,knowledge%20and%20standard%20of%20living.
 United Nations Development Programme. (2020). Human Development Report 2019 – Technical notes. https://web.archive.org/web/20210606201849/http://hdr.undp.org/sites/default/files/hdr2020_technical_notes.pdf.
 https://www.cashnetusa.com/blog/starbucks-price-every-country/ https://en.wikipedia.org/wiki/Value-added_tax#Around_the_world https://public.opendatasoft.com/explore/dataset/currency-codes/table/ https://unstats.un.org/unsd/snaama/Basic https://en.wikipedia.org/w/index.php?title=Gross_domestic_product&useskin=vector#GDP_per_capita
