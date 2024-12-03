@@ -17,10 +17,7 @@ To create the Starbucks Latte Index, we took a ten-step approach detailed in Goo
 Setting Up The Notebook
 First, we imported the necessary libraries to the Google Colab notebook.
 
-
-
 Next, we wrote the functions that we needed when interpreting the data.
-
 
 After this, we proceeded to extract and analyze data.
 # 1. Scraping Starbucks latte prices
@@ -59,6 +56,10 @@ This table now contains all the data we need to understand PPP.
 
 As we can see, some countries like Chile, Australia, and Belgium have more expensive lattes than Canada. We can also see that some countries like Colombia, Cambodia, Austria and Andorra have cheaper lattes than Canada. There are clearly price differences between the countries, despite the fact that the consumer is buying the same product.
 
+The second part of this step was to map and label all countries with their currency codes; this required us to import data on the longitude and latitude of every country. We then created an if statement function to attach a specific colour to every continent based on certain conditions. This function was crucial in our process as it helped us visually distinguish between different continents. We then joined our data of currency codes and their respective countries with the imported data to map and display this information to the user.
+
+![Currency Map](map2.png "Currency Map")
+
 # 5. Graphing the price differences between other countries and Canada
 We generate a bar graph showing the price differences of foreign countries with respect to the prices of Canada. We use the barh() function to do this.
 
@@ -89,9 +90,12 @@ Comparing this bar graph to the bar graph of price differences, we can see a gen
 # 9. External Factors: Exchange rates vs PPP
 As a critical concept explaining the price differences in different countries, PPP is crucial in guiding investment decisions. By comparing it to the exchange rate for every currency, we can determine the potential value of the Canadian dollar. This understanding of PPP significantly enhances the sense of expertise of Starbucks executives, making them feel more knowledgeable and competent in their investment decisions, thereby boosting their confidence. 
 
-We devised a map to engage Canadian consumers and Starbucks executives in a strategic understanding of the countries where they can enjoy more Starbucks lattes or, as an executive, where their investments would yield higher returns. To craft this map, we employed a for loop that systematically evaluates the PPP of each country against the exchange rate. If the PPP surpasses the exchange rate, it signifies a country ripe for astute investment - provided other requisite research has been conducted - and lastly, the same process method was used to display the map.
+We devised a map to engage Canadian consumers and Starbucks executives in a strategic understanding of the countries where they can enjoy more Starbucks lattes or, as an executive, where their investments would yield higher returns. To craft this map, we employed a for loop that evaluates the PPP of each country against the exchange rate. If the PPP surpasses the exchange rate, it signifies a investment opportunity where the currency is actually undervalued compared to its set exchange rate.
+
 ![Investment Table](table5.png "Investment Table")
+
 ![Investment Map](map1.png "Investment Map")
+
 # 10. Conclusions based on findings
 In conclusion, explaining the differences in PPP per country needs a more comprehensive approach that considers multiple factors in understanding price differences, rather than attributing them to a single cause. 
 
@@ -102,8 +106,18 @@ For consumers, the prospect of visiting countries with higher PPP than exchange 
 Ultimately, if you are a Starbucks lattes fan looking to maximize its consumption or minimize its cost, you can use our map to find the best country to get more of it! Similarly, our map could guide you to the right investment location if you are a Starbucks executive looking to maximize the company's return on investment, instilling a sense of guidance and confidence in your decision-making process.
 
 # References:
-Aisen, A., & Veiga, F. J., (2013). How does political instability affect economic growth?. European Journal of Political Economy, 29, 151-167. Klugman J., Rodríguez F., Choi HJ., (2011, January). Human development index, World Health Organization, https://www.who.int/data/nutrition/nlis/info/human-development-index#:~:text=The%20HDI%20is%20a%20summary,knowledge%20and%20standard%20of%20living.
+Aisen, A., & Veiga, F. J., (2013). How does political instability affect economic growth?. European Journal of Political Economy, 29, 151-167.
+
+Klugman J., Rodríguez F., Choi HJ., (2011, January). Human development index, World Health Organization, https://www.who.int/data/nutrition/nlis/info/human-development-index#:~:text=The%20HDI%20is%20a%20summary,knowledge%20and%20standard%20of%20living.
+
 United Nations Development Programme. (2020). Human Development Report 2019 – Technical notes. https://web.archive.org/web/20210606201849/http://hdr.undp.org/sites/default/files/hdr2020_technical_notes.pdf.
-https://www.cashnetusa.com/blog/starbucks-price-every-country/ https://en.wikipedia.org/wiki/Value-added_tax#Around_the_world https://public.opendatasoft.com/explore/dataset/currency-codes/table/ https://unstats.un.org/unsd/snaama/Basic https://en.wikipedia.org/w/index.php?title=Gross_domestic_product&useskin=vector#GDP_per_capita
+
+https://www.cashnetusa.com/blog/starbucks-price-every-country/
+
+https://en.wikipedia.org/wiki/Value-added_tax#Around_the_world 
+
+https://public.opendatasoft.com/explore/dataset/currency-codes/table/ 
+
+https://unstats.un.org/unsd/snaama/Basic https://en.wikipedia.org/w/index.php?title=Gross_domestic_product&useskin=vector#GDP_per_capita
 
 Insanely Good Recipes. (n.d.). *Copycat Starbucks Pumpkin Spice Latte Recipe*. Pinterest. Retrieved December 2, 2024, from https://ar.pinterest.com/pin/365917538496010170/. 
