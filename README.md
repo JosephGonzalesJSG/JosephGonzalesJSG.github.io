@@ -13,13 +13,18 @@ To make this concept more tangible, we have created a Starbucks Tall Latte Index
 Starbucks latte is a tasty, energizing drink that many people consume daily. Starbucks is one of the most recognizable coffee companies, with many locations worldwide. Additionally, consumers worldwide expect to drink the same latte in Canada, just as in Brazil. Similarly, consumers would expect their currency's value to be the same in other countries and afford a latte across different countries for the same value.
 
 # The Creation Of The Index
-To create the Starbucks Latte Index, we took a ten-step approach detailed in Google Colab Notebook. Let us dive right in!
-Setting Up The Notebook
+To create the Starbucks Latte Index, we took a ten-step approach detailed in Google Colab Notebook. 
+
+Let us dive right in!
+
+# Setting Up The Notebook
+
 First, we imported the necessary libraries to the Google Colab notebook.
 
 Next, we wrote the functions that we needed when interpreting the data.
 
 After this, we proceeded to extract and analyze data.
+
 # 1. Scraping Starbucks latte prices
 We scraped data taken from Cash Net USA using the "requests" library. Scraping the data allowed us to create a detailed "table" showing the prices of tall lattes in US dollars in 19 countries. However, our "table" was not formatted as a data science table. Instead, it was an array of divs. To fix the formatting issue, we used a loop to obtain the data from each div individually and put it into the rows and columns of a data science table.
 
