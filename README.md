@@ -24,7 +24,7 @@ Next, we wrote the functions that we needed when interpreting the data.
 
 After this, we proceeded to extract and analyze data.
 # 1. Scraping Starbucks latte prices
-With unwavering dedication, we meticulously scraped the data from Cash Net USA using the "requests" library. Scraping the data allowed us to create a detailed "table" showing the prices of tall lattes in US dollars in 19 countries. However, our "table" was not formatted as a data science table. Instead, it was an array of divs. To fix the formatting issue, we used a loop to obtain the data from each div individually and put it into the rows and columns of a data science table.
+We scraped data taken from Cash Net USA using the "requests" library. Scraping the data allowed us to create a detailed "table" showing the prices of tall lattes in US dollars in 19 countries. However, our "table" was not formatted as a data science table. Instead, it was an array of divs. To fix the formatting issue, we used a loop to obtain the data from each div individually and put it into the rows and columns of a data science table.
 
 # 2. Cleaning the latte prices data and converting prices from USD to CAD
 After scraping the data into a data science table, we used a predefined function to clean the latte price column. This function strips the dollar sign in the price column and converts all the strings to floats, enabling us to use these numbers in calculations. Once our data was clean, we used it for calculations and conversions. Since the prices we scrapped were in USD, we needed to convert them to CAD. To ensure the accuracy of the conversion, we utilized another predefined function that imported an API for the conversions. We then applied this function to the USD prices and saved the results in a new column, providing the most accurate data for your analysis.
@@ -32,15 +32,18 @@ Additionally, we calculated the Purchasing Power Parity by using the price in Ca
 
 The resulting table is displayed in the picture below.
 
+<table1>
 
 # 3. Factoring local tax rates into the calculation
 The prices we scraped do not include the tax each Starbucks location would charge the consumers. Therefore, we wanted to examine if sales tax will affect PPP. Therefore, we scraped the sales tax in every country from Wikipedia; since the data was split into Euro and Non-Euro tables, we combined the two tables. Then, we needed to incorporate sales tax into the calculation, which sounded to us more straightforward than it was. It was more complicated than we thought because some countries have sales tax included in their price, and some do not; some countries have provinces, states, and cities that could charge different sales taxes within the same country. To tackle the tax challenge, we took the average sales tax that a consumer will pay in a country, and for us Brazil and Canada happened to have a sales tax that varies with location; therefore, we readjusted their sales tax accordingly. Using the tax data we gathered, we calculated a new PPP that includes sales tax and saved it in a new column. 
 
 This resulted in the following table:
 
+<table2>
 
 To validate our expectation that there will be no difference between the PPP without tax and the PPP with tax, we created a bar graph that displays both indexes for each country side by side.
 
+<bargraph1>
 
 As we can see above, our expectation that sales tax does not change the PPP Index was right.
 
@@ -51,31 +54,33 @@ For reference, we also added columns with the name of the local currency, the th
 
 We did this by exporting a data set containing all countries’ currency names and currency codes from OpenDataSoft. Then we used the table.join() method to match the relevant currency names and codes from the .csv file to the countries in our data.
 
-
-
-
-
-
+<table3>
 
 This table now contains all the data we need to understand PPP.
 
 As we can see, some countries like Chile, Australia, and Belgium have more expensive lattes than Canada. We can also see that some countries like Colombia, Cambodia, Austria and Andorra have cheaper lattes than Canada. There are clearly price differences between the countries, despite the fact that the consumer is buying the same product.
+
 5. Graphing the price differences between other countries and Canada
 We generate a bar graph showing the price differences of foreign countries with respect to the prices of Canada. We use the barh() function to do this.
 
+<bargraph2>
 
 Now, we want to answer the question of why this occurs. After all, one would think that if we are buying the same product made by the same company with the same ingredients, we should be paying the same amount of money for it. 
 
 # 6. External factors: Nominal GDP per Capita and Human Development Index
 The first external factor we will examine is nominal GDP. We again imported GDP from the United Nations website in the form of a csv file and used the .join() function to add this data to our table.
 
-Then, we found a scatter plot to relate Nominal GDP per capita in CAD to price differences.
+<table3>
 
+Then, we created a scatter plot to relate Nominal GDP per capita in CAD to price differences.
+
+<scatterplot1>
 
 This is the plot we got. Calculating the correlation coefficient, we get an r value of 0.18716967518. This coefficient suggests a weak correlation between the price difference of Starbucks' latte and a country's GDP. However, this could be due to a variety of external factors influencing the price of a Starbucks latte. For example, countries experiencing political instability often have a higher cost of living, leading to increased prices of goods. It's important to note that countries with low GDP often experience political instability simultaneously (Aisen, A., & Veiga, F. J., 2013). Inflation can also impact the price of a Starbucks latte, with countries with high inflation rates also experiencing higher living costs. 
 
 Looking at another external factor similar to the ones mentioned above, we now take a look at Human Development Index scores, a measure of the well being of a citizen of a country based on three criteria: health, knowledge, and standard of living.
 
+<bargraph3>
 
 Comparing this bar graph to the bar graph of price differences, we can see a general trend where countries who have lower HDI values tend to have higher negative price differences with that of Canada. While this observation does not hold for all countries, it does help to further contextualize why these differences in purchasing power parity occur.
 
