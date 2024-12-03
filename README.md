@@ -1,15 +1,15 @@
-#The Starbucks Latte Index
+# The Starbucks Latte Index
 
 
 
 Have you ever wondered if your dollar can buy you a coffee no matter what country you are in? Have you ever wondered if you actually get your money’s worth when buying goods in other countries? 
 
-#Purchasing Power Parity
+# Purchasing Power Parity
 Understanding purchasing power parity is crucial as it can help you answer these questions. It measures the differences in price levels between countries in that country’s currency. It helps you find an exchange rate based on price levels, which may be lower or higher than the nominal exchange rate set by the Bank of Canada. Having a higher PPP than the exchange rate means that you could buy coffee in another country cheaper than what you can buy in Canada.
 
 To make this concept more tangible, we have created a Starbucks Tall Latte Index, which shows the prices of tall lattes in different countries. This index is a practical tool to understand the implications of purchasing power parity.
 
-#Why Starbucks Latte?
+# Why Starbucks Latte?
 Starbucks latte is a tasty, energizing drink that many people consume daily. Starbucks is one of the most recognizable coffee companies, with many locations worldwide. Additionally, consumers worldwide expect to drink the same latte in Canada, just as in Brazil. Similarly, consumers would expect their currency's value to be the same in other countries and afford a latte across different countries for the same value.
 
 #The Creation Of The Index
@@ -23,17 +23,17 @@ Next, we wrote the functions that we needed when interpreting the data.
 
 
 After this, we proceeded to extract and analyze data.
-#1. Scraping Starbucks latte prices
+# 1. Scraping Starbucks latte prices
 With unwavering dedication, we meticulously scraped the data from Cash Net USA using the "requests" library. Scraping the data allowed us to create a detailed "table" showing the prices of tall lattes in US dollars in 19 countries. However, our "table" was not formatted as a data science table. Instead, it was an array of divs. To fix the formatting issue, we used a loop to obtain the data from each div individually and put it into the rows and columns of a data science table.
 
-#2. Cleaning the latte prices data and converting prices from USD to CAD
+# 2. Cleaning the latte prices data and converting prices from USD to CAD
 After scraping the data into a data science table, we used a predefined function to clean the latte price column. This function strips the dollar sign in the price column and converts all the strings to floats, enabling us to use these numbers in calculations. Once our data was clean, we used it for calculations and conversions. Since the prices we scrapped were in USD, we needed to convert them to CAD. To ensure the accuracy of the conversion, we utilized another predefined function that imported an API for the conversions. We then applied this function to the USD prices and saved the results in a new column, providing the most accurate data for your analysis.
 Additionally, we calculated the Purchasing Power Parity by using the price in Canada as the base price for the index and dividing every other country's price by the Canadian price. We used a function to calculate the PPP and applied it to the USD prices, as the PPP index remains the same whether using CAD or USD. We saved the results in a new column for each country's index.
 
 The resulting table is displayed in the picture below.
 
 
-#3. Factoring local tax rates into the calculation
+# 3. Factoring local tax rates into the calculation
 The prices we scraped do not include the tax each Starbucks location would charge the consumers. Therefore, we wanted to examine if sales tax will affect PPP. Therefore, we scraped the sales tax in every country from Wikipedia; since the data was split into Euro and Non-Euro tables, we combined the two tables. Then, we needed to incorporate sales tax into the calculation, which sounded to us more straightforward than it was. It was more complicated than we thought because some countries have sales tax included in their price, and some do not; some countries have provinces, states, and cities that could charge different sales taxes within the same country. To tackle the tax challenge, we took the average sales tax that a consumer will pay in a country, and for us Brazil and Canada happened to have a sales tax that varies with location; therefore, we readjusted their sales tax accordingly. Using the tax data we gathered, we calculated a new PPP that includes sales tax and saved it in a new column. 
 
 This resulted in the following table:
@@ -44,7 +44,7 @@ To validate our expectation that there will be no difference between the PPP wit
 
 As we can see above, our expectation that sales tax does not change the PPP Index was right.
 
-#4. Displaying the currencies for each country
+# 4. Displaying the currencies for each country
 Next, we want to know the price difference between the prices of the latte in Canada to the prices in the other countries. We do this by subtracting the price of a Canadian latte from the price of a foreign latte.
 
 For reference, we also added columns with the name of the local currency, the three letter currency code and the price of the latte in local currency.
@@ -66,7 +66,7 @@ We generate a bar graph showing the price differences of foreign countries with 
 
 Now, we want to answer the question of why this occurs. After all, one would think that if we are buying the same product made by the same company with the same ingredients, we should be paying the same amount of money for it. 
 
-#6. External factors: Nominal GDP per Capita and Human Development Index
+# 6. External factors: Nominal GDP per Capita and Human Development Index
 The first external factor we will examine is nominal GDP. We again imported GDP from the United Nations website in the form of a csv file and used the .join() function to add this data to our table.
 
 Then, we found a scatter plot to relate Nominal GDP per capita in CAD to price differences.
@@ -80,7 +80,7 @@ Looking at another external factor similar to the ones mentioned above, we now t
 Comparing this bar graph to the bar graph of price differences, we can see a general trend where countries who have lower HDI values tend to have higher negative price differences with that of Canada. While this observation does not hold for all countries, it does help to further contextualize why these differences in purchasing power parity occur.
 
 
-#7. Conclusions based on findings
+# 7. Conclusions based on findings
 In conclusion, explaining the differences in PPP per country needs a more comprehensive approach that considers multiple factors in understanding price differences, rather than attributing them to a single cause. 
 
 As a critical concept explaining the price differences in different countries, PPP is crucial in guiding investment decisions. By comparing it to the exchange rate for every currency, we can determine the potential value of the Canadian dollar. This understanding of PPP significantly enhances the sense of expertise of Starbucks executives, making them feel more knowledgeable and competent in their investment decisions, thereby boosting their confidence.
