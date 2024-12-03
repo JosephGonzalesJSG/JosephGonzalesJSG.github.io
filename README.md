@@ -1,6 +1,6 @@
 # The Starbucks Latte Index
 
-
+![Pumpkin spice latte](picture.png "Pumpkin spice latte")
 
 Have you ever wondered if your dollar can buy you a coffee no matter what country you are in? Have you ever wondered if you actually get your money’s worth when buying goods in other countries? 
 
