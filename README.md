@@ -59,8 +59,6 @@ Below is a picture of the table that we have created.
 
 This table now contains all the data we need to understand PPP.
 
-As we can see, some countries like Chile, Australia, and Belgium have more expensive lattes than Canada. We can also see that some countries like Colombia, Cambodia, Austria and Andorra have cheaper lattes than Canada. There are clearly price differences between the countries, despite the fact that the consumer is buying the same product.
-
 The second part of this step was to map and label all countries with their currency codes; this required us to import data on the longitude and latitude of every country. We then created an if statement function to attach a specific colour to every continent based on certain conditions. This function was crucial in our process as it helped us visually distinguish between different continents. We then joined our data of currency codes and their respective countries with the imported data to map and display this information to the user.
 
 ![Currency Map](map2.png "Currency Map")
@@ -69,6 +67,8 @@ The second part of this step was to map and label all countries with their curre
 We generate a bar graph showing the price differences of foreign countries with respect to the prices of Canada. We use the barh() function to do this.
 
 ![Price difference comparison](bargraph2.png "Price Difference Comparison")
+
+As we can see, some countries like Chile, Australia, and Belgium have unexpectedly more expensive lattes than Canada's. On the other hand, some countries like Colombia, Cambodia, Austria, and Andorra offer lattes at surprisingly lower prices than Canada's. These price differences are quite unexpected despite the consumer purchasing the same product.
 
 Now, we want to answer the question of why this occurs. After all, one would think that if we are buying the same product made by the same company with the same ingredients, we should be paying the same amount of money for it. 
 
