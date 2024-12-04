@@ -2,7 +2,7 @@
 
 ![Pumpkin spice latte](picture.png "Pumpkin spice latte")
 
-Have you ever wondered if your dollar can buy you a coffee no matter what country you are in? Have you ever wondered if you actually get your money’s worth when buying the same goods in other countries? 
+Have you ever wondered if your dollar is valued the same no matter what country you are in? Have you ever wondered if you actually get your money’s worth when buying goods in other countries?
 
 # Purchasing Power Parity
 Understanding purchasing power parity is crucial as it can help you answer these questions. It measures the differences in price levels between countries in that country’s currency. It helps you find an exchange rate based on price levels, which may be lower or higher than the nominal exchange rate set by the Bank of Canada. Having a higher PPP than the exchange rate means that you could buy coffee in another country cheaper than what you can buy in Canada.
